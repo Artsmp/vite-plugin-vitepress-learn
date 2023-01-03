@@ -5,5 +5,9 @@ import { vitePluginVitepress } from '../src'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue(), Inspect(), vitePluginVitepress()],
+  plugins: [
+    vue({ include: [/\.vue$/, /\.md$/] }),
+    Inspect(),
+    vitePluginVitepress(),
+  ],
 })
