@@ -1,5 +1,5 @@
 {
-	"name": "vite-plugin-vitepress",
+	"name": "@abei666/vite-plugin-vitepress",
 	"license": "ISC",
 	"main": "dist/index.js",
 	"module": "dist/index.mjs",
@@ -12,6 +12,9 @@
 	"files": [
 		"dist"
 	],
+	"publishConfig": {
+		"access": "public"
+	},
 	"types": "dist/index.d.ts",
 	"exports": {
 		".": {
